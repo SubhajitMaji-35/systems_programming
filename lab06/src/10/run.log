@@ -1,0 +1,78 @@
+===================
+test5: PASSED
+Given input
+aVeryLongString OneMoreLongString
+Got output: 
+aVeryLongStringOneMoreLongString
+===================
+
+===================
+test9: PASSED
+Given input
+Open AI
+Got output: 
+OpenAI
+===================
+
+===================
+test7: PASSED
+Given input
+Good Morning
+Got output: 
+GoodMorning
+===================
+
+===================
+test2: PASSED
+Given input
+embarrassingly little
+Got output: 
+embarrassinglylittle
+===================
+
+===================
+test8: PASSED
+Given input
+Data Science
+Got output: 
+DataScience
+===================
+
+===================
+test6: PASSED
+Given input
+hello world
+Got output: 
+helloworld
+===================
+
+===================
+test1: PASSED
+Given input
+understood the
+Got output: 
+understoodthe
+===================
+
+===================
+test4: PASSED
+Given input
+as asdjkajkreallylongtext
+Got output: 
+asasdjkajkreallylongtext
+===================
+
+===================
+test3: PASSED
+Given input
+interestedinthatquestion x
+Got output: 
+interestedinthatquestionx
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 9
+TESTS_FAILED: 0
++++++++++++++++++++
+

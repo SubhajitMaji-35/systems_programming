@@ -1,0 +1,79 @@
+===================
+test5: PASSED
+Given input
+a
+Got output: 
+Palindrome
+===================
+
+===================
+test9: PASSED
+Given input
+madam
+Got output: 
+Palindrome
+===================
+
+===================
+test7: PASSED
+Given input
+racecar
+Got output: 
+Palindrome
+===================
+
+===================
+test2: PASSED
+Given input
+level
+Got output: 
+Palindrome
+===================
+
+===================
+test8: PASSED
+Given input
+hello
+
+Got output: 
+Not Palindrome
+===================
+
+===================
+test6: PASSED
+Given input
+palindrome
+Got output: 
+Not palindrome
+===================
+
+===================
+test1: PASSED
+Given input
+radar
+Got output: 
+Palindrome
+===================
+
+===================
+test4: PASSED
+Given input
+ignoring
+Got output: 
+Not palindrome
+===================
+
+===================
+test3: PASSED
+Given input
+civic
+Got output: 
+Palindrome
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 9
+TESTS_FAILED: 0
++++++++++++++++++++
+

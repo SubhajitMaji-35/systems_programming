@@ -1,0 +1,134 @@
+===================
+test12: PASSED
+Given input
+0x1234
+Got output: 
+4660
+===================
+
+===================
+test5: PASSED
+Given input
+0x000A
+Got output: 
+10
+===================
+
+===================
+test9: PASSED
+Given input
+0x00FF
+Got output: 
+255
+===================
+
+===================
+test7: PASSED
+Given input
+0xDEAD
+Got output: 
+57005
+===================
+
+===================
+test14: PASSED
+Given input
+0x0998
+Got output: 
+2456
+===================
+
+===================
+test2: PASSED
+Given input
+0x123F
+Got output: 
+4671
+===================
+
+===================
+test8: PASSED
+Given input
+0xBEEF
+Got output: 
+48879
+===================
+
+===================
+test13: PASSED
+Given input
+0x8000
+Got output: 
+32768
+===================
+
+===================
+test11: PASSED
+Given input
+0x0001
+Got output: 
+1
+===================
+
+===================
+test6: PASSED
+Given input
+0x0000
+Got output: 
+0
+===================
+
+===================
+test16: PASSED
+Given input
+0x7573
+Got output: 
+30067
+===================
+
+===================
+test15: PASSED
+Given input
+0x5A3B
+Got output: 
+23099
+===================
+
+===================
+test1: PASSED
+Given input
+0x000F
+Got output: 
+15
+===================
+
+===================
+test10: PASSED
+Given input
+0x000B
+Got output: 
+11
+===================
+
+===================
+test4: PASSED
+Given input
+0xFFFF
+Got output: 
+65535
+===================
+
+===================
+test3: PASSED
+Given input
+0x1000
+Got output: 
+4096
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 16
+TESTS_FAILED: 0
++++++++++++++++++++
+

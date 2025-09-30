@@ -1,0 +1,86 @@
+===================
+test5: PASSED
+Given input
+-212
+Got output: 
+Negative
+===================
+
+===================
+test9: PASSED
+Given input
+-111
+Got output: 
+Negative
+===================
+
+===================
+test7: PASSED
+Given input
+-1000
+Got output: 
+Negative
+===================
+
+===================
+test2: PASSED
+Given input
+-1
+Got output: 
+Negative
+===================
+
+===================
+test8: PASSED
+Given input
+23
+Got output: 
+Positive
+===================
+
+===================
+test6: PASSED
+Given input
+1212
+Got output: 
+Positive
+===================
+
+===================
+test1: PASSED
+Given input
+3
+Got output: 
+Positive
+===================
+
+===================
+test10: PASSED
+Given input
+-0
+Got output: 
+Zero
+===================
+
+===================
+test4: PASSED
+Given input
+0
+Got output: 
+Zero
+===================
+
+===================
+test3: PASSED
+Given input
+4
+Got output: 
+Positive
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

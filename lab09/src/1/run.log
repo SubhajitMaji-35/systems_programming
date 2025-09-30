@@ -1,0 +1,43 @@
+===================
+test12: FAILED
+Given input
+i 11
+i 22
+i 33
+p -1
+s 22
+s 99
+d 11
+p -1
+r -1
+p -1
+q 0
+Expected output: 
+33 22 11 
+True
+False
+Deleted
+33 22 
+22 33 
+Got output: 
+bash: line 1: 12823 Segmentation fault      (core dumped) /home/112401035/cs2013_112401035/lab09/src/1/1 < test12.in
+===================
+
+===================
+test5: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 12
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 14 
+===================
+
+===================

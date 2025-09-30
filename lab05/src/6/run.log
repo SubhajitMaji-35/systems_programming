@@ -1,0 +1,110 @@
+===================
+test12: PASSED
+Given input
+11111
+Got output: 
+Not power of 3
+===================
+
+===================
+test5: PASSED
+Given input
+9
+Got output: 
+Power of 3
+===================
+
+===================
+test9: PASSED
+Given input
+9.4
+Got output: 
+Power of 3
+===================
+
+===================
+test7: PASSED
+Given input
+9
+Got output: 
+Power of 3
+===================
+
+===================
+test2: PASSED
+Given input
+123
+Got output: 
+Not power of 3
+===================
+
+===================
+test8: PASSED
+Given input
+9.0
+Got output: 
+Power of 3
+===================
+
+===================
+test13: PASSED
+Given input
+3
+Got output: 
+Power of 3
+===================
+
+===================
+test11: PASSED
+Given input
+hello
+Got output: 
+Not power of 3
+===================
+
+===================
+test6: PASSED
+Given input
+1
+Got output: 
+Power of 3
+===================
+
+===================
+test1: PASSED
+Given input
+177147
+Got output: 
+Power of 3
+===================
+
+===================
+test10: PASSED
+Given input
+0
+Got output: 
+Not power of 3
+===================
+
+===================
+test4: PASSED
+Given input
+531441
+Got output: 
+Power of 3
+===================
+
+===================
+test3: PASSED
+Given input
+1296
+Got output: 
+Not power of 3
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 13
+TESTS_FAILED: 0
++++++++++++++++++++
+
