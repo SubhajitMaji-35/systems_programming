@@ -1,0 +1,82 @@
+ Information:date 
+---
+tags: [ date, time ]
+---
+# To print Abbreviated weekday name:
+date +"%a"
+
+# To print Full month name:
+date +"%B"
+
+# To print ISO date (same as %Y-%m-%d):
+date +"%F"
+
+# To print Time (same as %H:%M:%S):
+date +"%T"
+
+# To print Sunday week number (00 to 53):
+date +"%U"
+
+# To print Monday week number (00 to 53):
+date +"%W"
+
+# To print Time (localized):
+date +"%X"
+
+# To print 4-digit year:
+date +"%Y"
+
+# To print Timezone name:
+date +"%Z"
+# To print the date in a format suitable for affixing to file names:
+date +"%Y%m%d_%H%M%S"
+
+# To convert a Unix timestamp to Date (Linux):
+date -d @1440359821
+
+# To convert a Unix timestamp to Date (OSX):
+date -r 1440359821
+
+# To show the current timezone:
+date +%Z
+
+# To show date in RFC format with TZ offset:
+date -R
+
+# To show date in UTC/GMT:
+date -u
+
+# To show date in CET:
+TZ=CET date
+
+# To show the time on the west coast of the US (use tzselect(1) to find TZ):
+TZ='America/Los_Angeles' date
+
+ tldr:date 
+# date
+# Set or display the system date.
+# More information: <https://www.gnu.org/software/coreutils/date>.
+
+# Display the current date using the default locale's format:
+date +%c
+
+# Display the current date in UTC, using the ISO 8601 format:
+date -u +%Y-%m-%dT%H:%M:%S%Z
+
+# Display the current date as a Unix timestamp (seconds since the Unix epoch):
+date +%s
+
+# Convert a date specified as a Unix timestamp to the default format:
+date -d @1473305798
+
+# Convert a given date to the Unix timestamp format:
+date -d "2018-09-01 00:00" +%s --utc
+
+# Display the current date using the RFC-3339 format (`YYYY-MM-DD hh:mm:ss TZ`):
+date --rfc-3339=s
+
+# Set the current date using the format `MMDDhhmmYYYY.ss` (`YYYY` and `.ss` are optional):
+date 093023592021.59
+
+# Display the current ISO week number:
+date +%V

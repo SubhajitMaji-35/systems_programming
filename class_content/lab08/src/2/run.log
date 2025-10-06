@@ -1,0 +1,174 @@
+===================
+test19: PASSED
+Given input
+0
+Got output: 
+1
+===================
+
+===================
+test18: PASSED
+Given input
+15
+Got output: 
+1307674368000
+===================
+
+===================
+test12: PASSED
+Given input
+4096
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test5: PASSED
+Given input
+10
+Got output: 
+3628800
+===================
+
+===================
+test9: PASSED
+Given input
+18
+Got output: 
+6402373705728000
+===================
+
+===================
+test7: PASSED
+Given input
+14
+Got output: 
+87178291200
+===================
+
+===================
+test17: PASSED
+Given input
+100
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test14: PASSED
+Given input
+16384
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test2: PASSED
+Given input
+4
+Got output: 
+24
+===================
+
+===================
+test8: PASSED
+Given input
+16
+Got output: 
+20922789888000
+===================
+
+===================
+test13: PASSED
+Given input
+8192
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test11: PASSED
+Given input
+2048
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test6: PASSED
+Given input
+12
+Got output: 
+479001600
+===================
+
+===================
+test16: PASSED
+Given input
+65536
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test15: PASSED
+Given input
+32768
+Got output: 
+TOO LARGE TO COMPUTE
+===================
+
+===================
+test20: PASSED
+Given input
+1
+Got output: 
+1
+===================
+
+===================
+test1: PASSED
+Given input
+2
+Got output: 
+2
+===================
+
+===================
+test10: PASSED
+Given input
+20
+Got output: 
+2432902008176640000
+===================
+
+===================
+test4: PASSED
+Given input
+8
+Got output: 
+40320
+===================
+
+===================
+test3: PASSED
+Given input
+6
+Got output: 
+720
+===================
+
+===================
+test21: PASSED
+Given input
+13
+Got output: 
+6227020800
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 21
+TESTS_FAILED: 0
++++++++++++++++++++
+

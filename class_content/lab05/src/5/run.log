@@ -1,0 +1,86 @@
+===================
+test5: PASSED
+Given input
+1212
+Got output: 
+Not divisible
+===================
+
+===================
+test9: PASSED
+Given input
+-17
+Got output: 
+Divisible
+===================
+
+===================
+test7: PASSED
+Given input
+0
+Got output: 
+Divisible
+===================
+
+===================
+test2: PASSED
+Given input
+101
+Got output: 
+Not divisible
+===================
+
+===================
+test8: PASSED
+Given input
+54
+Got output: 
+Not divisible
+===================
+
+===================
+test6: PASSED
+Given input
+11
+Got output: 
+Not divisible
+===================
+
+===================
+test1: PASSED
+Given input
+234
+Got output: 
+Not divisible
+===================
+
+===================
+test10: PASSED
+Given input
+119
+Got output: 
+Divisible
+===================
+
+===================
+test4: PASSED
+Given input
+2
+Got output: 
+Not divisible
+===================
+
+===================
+test3: PASSED
+Given input
+-1
+Got output: 
+Not divisible
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

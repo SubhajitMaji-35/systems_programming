@@ -1,0 +1,189 @@
+===================
+test12: PASSED
+Given input
+Raktim
+27
+10034532
+99
+
+Got output: 
+Name: Raktim
+Age: 27
+Roll: 10134532
+Marks: 99
+===================
+
+===================
+test5: PASSED
+Given input
+Karan
+24
+77889900
+82
+Got output: 
+Name: Karan
+Age: 24
+Roll: 77989900
+Marks: 82
+===================
+
+===================
+test9: PASSED
+Given input
+Diya
+20
+34567892
+32
+Got output: 
+Name: Diya
+Age: 20
+Roll: 34667892
+Marks: 32
+===================
+
+===================
+test7: PASSED
+Given input
+Ravi
+29
+99001122
+80
+Got output: 
+Name: Ravi
+Age: 29
+Roll: 99101122
+Marks: 80
+===================
+
+===================
+test2: PASSED
+Given input
+Sneha
+19
+44556677
+90
+Got output: 
+Name: Sneha
+Age: 19
+Roll: 44656677
+Marks: 90
+===================
+
+===================
+test8: PASSED
+Given input
+Rani
+25
+28906543
+100
+Got output: 
+Name: Rani
+Age: 25
+Roll: 29006543
+Marks: 100
+===================
+
+===================
+test13: PASSED
+Given input
+Priya
+27
+66778899
+95
+Got output: 
+Name: Priya
+Age: 27
+Roll: 66878899
+Marks: 95
+===================
+
+===================
+test11: PASSED
+Given input
+Rani
+25
+28906543
+100
+Got output: 
+Name: Rani
+Age: 25
+Roll: 29006543
+Marks: 100
+===================
+
+===================
+test6: PASSED
+Given input
+Neha
+21
+88990011
+88
+Got output: 
+Name: Neha
+Age: 21
+Roll: 89090011
+Marks: 88
+===================
+
+===================
+test1: PASSED
+Given input
+Rahul
+22
+33445566
+85
+Got output: 
+Name: Rahul
+Age: 22
+Roll: 33545566
+Marks: 85
+===================
+
+===================
+test10: PASSED
+Given input
+Raktim
+27
+10034532
+99
+Got output: 
+Name: Raktim
+Age: 27
+Roll: 10134532
+Marks: 99
+===================
+
+===================
+test4: PASSED
+Given input
+Priya
+27
+66778899
+95
+Got output: 
+Name: Priya
+Age: 27
+Roll: 66878899
+Marks: 95
+===================
+
+===================
+test3: PASSED
+Given input
+Vikram
+30
+55667788
+78
+Got output: 
+Name: Vikram
+Age: 30
+Roll: 55767788
+Marks: 78
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 13
+TESTS_FAILED: 0
++++++++++++++++++++
+

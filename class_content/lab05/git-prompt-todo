@@ -1,0 +1,11 @@
+Make sure that you copy the git-prompt.sh to your home with the name .git-prompt.sh
+Add the following to your .bashrc file
+
+source ~/.git-prompt.sh
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWCOLORHINTS=true
+
+
+

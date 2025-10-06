@@ -161,6 +161,14 @@ int delete(Node** ref_to_head, int num){
   Node* prev = NULL;
   // TODO: Read the docstring above and complete the code
 	Node* curr = *ref_to_head;
+	if(curr==NULL){
+		return 0;
+	}
+	if(curr->next==NULL&& curr->data==num){
+		free(curr);
+		*ref_to_head=NULL;
+		return 1;
+	}
 	while(curr!=NULL){
 		if(curr->data == num){
 			prev->next=curr->next;
@@ -194,21 +202,19 @@ int delete(Node** ref_to_head, int num){
 void reverse(Node** ref_to_head){
 
   // TODO: Read the docstring above and complete the code
-	Node* ptr0= *ref_to_head;
-	Node* ptr1= ptr0->next;
-	Node* ptr2= ptr1->next;
+	Node* ptr0;
+	Node* ptr1=*ref_to_head;
+	Node* ptr2;
 	
-	ptr0->next=NULL;
+	ptr0=NULL;
 
-	if(ptr0!=NULL){
+	if(ptr1!=NULL){
 		while(ptr1!=NULL){
+			ptr2=ptr1->next;
 			ptr1->next=ptr0;
-
+					
 			ptr0=ptr1;
 			ptr1=ptr2;
-			if(ptr2->next!=NULL){
-				ptr2=ptr2->next;
-			}
 		}
 	}
 	*ref_to_head=ptr0;

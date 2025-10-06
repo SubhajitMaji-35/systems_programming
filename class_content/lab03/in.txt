@@ -1,0 +1,11 @@
+total 12
+-rw-r--r-- 1 faculty 623 38 Aug 14 14:41 for-script-2.sh
+-rw-r--r-- 1 faculty 623 32 Aug 14 14:38 for-script.sh
+-rw-r--r-- 1 faculty 623 92 Aug 14 14:50 if.sh
+-rw-r--r-- 1 faculty 623  0 Aug 14 15:09 out.txt
+-rw-r--r-- 1 faculty 623  0 Aug 14 12:29 test
+for-script-2.sh
+for-script.sh
+if.sh
+out.txt
+test

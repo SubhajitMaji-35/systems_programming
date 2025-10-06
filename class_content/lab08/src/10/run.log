@@ -1,0 +1,70 @@
+===================
+test5: PASSED
+Given input
+12000 56
+Got output: 
+56 12000
+===================
+
+===================
+test7: PASSED
+Given input
+2147483647 -2147483648
+Got output: 
+-2147483648 2147483647
+===================
+
+===================
+test2: PASSED
+Given input
+1239871 123
+Got output: 
+123 1239871
+===================
+
+===================
+test8: PASSED
+Given input
+42 42
+Got output: 
+42 42
+===================
+
+===================
+test6: PASSED
+Given input
+-999 999
+Got output: 
+999 -999
+===================
+
+===================
+test1: PASSED
+Given input
+12 4
+Got output: 
+4 12
+===================
+
+===================
+test4: PASSED
+Given input
+0 100
+Got output: 
+100 0
+===================
+
+===================
+test3: PASSED
+Given input
+-12 1233
+Got output: 
+1233 -12
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 8
+TESTS_FAILED: 0
++++++++++++++++++++
+

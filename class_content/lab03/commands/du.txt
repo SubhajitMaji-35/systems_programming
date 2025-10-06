@@ -1,0 +1,75 @@
+ Information.:du 
+# du
+# Estimate file space usage
+
+# With 'root' privileges, use du(1), sort(1), and head(1) to display a list of
+# the top 20 space-consuming files in whichever storage medium '/' is mounted.
+#
+# Here, du(1) is using the `-x` flag to keep to the one filesystem, which is
+# important for getting accurate results on the filesystem on which you
+# might, for example, be needing to free space.
+#
+# In order to sort the human-readable file sizes, sort(1) is using the `-h`
+# flag, the `-k` flag to specify the column to sort (first), and its using
+# the `-r` flag to reverse the sorting, so we see the highest size first.
+#
+# To then show the top-20 lines, we use head(1) and specify the number of lines
+# via the `-n` flag. The default number of lines displayed by head(1) and
+# tail(1) is 10.
+#
+# Root privileges are gained for this task by using sudo(8) on bash(1) in order
+# to have a new root-owned BASH session, which then executes the commands
+# proceeding the `-c` flag.
+sudo bash -c 'du -xh / | sort -rhk 1 | head -n 20'
+
+# Display just the total human-readable size of the current working directory.
+du -sh
+
+# Display the total human-readable size of the three provided directories, as
+# well as the grand total of the combined directories.
+du -chs ~/Desktop ~/Pictures ~/Videos
+# You could potentially make this task a bit easier with BASH brace expansion.
+du -chs ~/{Desktop,Pictures,Videos}
+
+ Information:du 
+# To sort directories/files by size:
+du -sk *| sort -rn
+
+# To show cumulative human-readable size:
+du -sh
+
+# To show cumulative human-readable size and dereference symlinks:
+du -shL
+
+# Show apparent size instead of disk usage (so sparse files will show greater
+# than zero):
+du -h --apparent-size
+
+# To sort directories/files by size (human-readable):
+du -sh * | sort -rh 
+
+# To list the 20 largest files and folders under the current working directory:
+du -ma | sort -nr | head -n 20
+
+ tldr:du 
+# du
+# Disk usage: estimate and summarize file and directory space usage.
+# More information: <https://www.gnu.org/software/coreutils/du>.
+
+# List the sizes of a directory and any subdirectories, in the given unit (B/KiB/MiB):
+du -b|k|m path/to/directory
+
+# List the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size):
+du -h path/to/directory
+
+# Show the size of a single directory, in human-readable units:
+du -sh path/to/directory
+
+# List the human-readable sizes of a directory and of all the files and directories within it:
+du -ah path/to/directory
+
+# List the human-readable sizes of a directory and any subdirectories, up to N levels deep:
+du -h --max-depth=N path/to/directory
+
+# List the human-readable size of all `.jpg` files in subdirectories of the current directory, and show a cumulative total at the end:
+du -ch */*.jpg

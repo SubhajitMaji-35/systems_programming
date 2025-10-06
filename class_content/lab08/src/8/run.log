@@ -1,0 +1,126 @@
+===================
+test12: PASSED
+Given input
+300004
+Got output: 
+7
+===================
+
+===================
+test5: PASSED
+Given input
+321654
+Got output: 
+3
+===================
+
+===================
+test9: PASSED
+Given input
+246801
+Got output: 
+3
+===================
+
+===================
+test7: PASSED
+Given input
+890123
+Got output: 
+5
+===================
+
+===================
+test14: PASSED
+Given input
+999999
+Got output: 
+9
+===================
+
+===================
+test2: PASSED
+Given input
+678901
+Got output: 
+4
+===================
+
+===================
+test8: PASSED
+Given input
+135792
+Got output: 
+9
+===================
+
+===================
+test13: PASSED
+Given input
+88888888
+Got output: 
+1
+===================
+
+===================
+test11: PASSED
+Given input
+12345678
+Got output: 
+9
+===================
+
+===================
+test6: PASSED
+Given input
+456789
+Got output: 
+3
+===================
+
+===================
+test15: PASSED
+Given input
+1000001
+Got output: 
+2
+===================
+
+===================
+test1: PASSED
+Given input
+102345
+Got output: 
+6
+===================
+
+===================
+test10: PASSED
+Given input
+908172
+Got output: 
+9
+===================
+
+===================
+test4: PASSED
+Given input
+987123
+Got output: 
+3
+===================
+
+===================
+test3: PASSED
+Given input
+543210
+Got output: 
+6
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 15
+TESTS_FAILED: 0
++++++++++++++++++++
+

@@ -1,0 +1,134 @@
+===================
+test12: PASSED
+Given input
+90
+Got output: 
+1.0000
+===================
+
+===================
+test5: PASSED
+Given input
+44.2
+Got output: 
+0.7073
+===================
+
+===================
+test9: PASSED
+Given input
+57.4
+Got output: 
+0.7543
+===================
+
+===================
+test7: PASSED
+Given input
+50.8
+Got output: 
+0.7179
+===================
+
+===================
+test14: PASSED
+Given input
+25
+Got output: 
+0.8199
+===================
+
+===================
+test2: PASSED
+Given input
+34.4
+Got output: 
+0.7421
+===================
+
+===================
+test8: PASSED
+Given input
+54.1
+Got output: 
+0.7331
+===================
+
+===================
+test13: PASSED
+Given input
+45
+Got output: 
+0.7071
+===================
+
+===================
+test11: PASSED
+Given input
+0
+Got output: 
+1.0000
+===================
+
+===================
+test6: PASSED
+Given input
+47.5
+Got output: 
+0.7091
+===================
+
+===================
+test16: PASSED
+Given input
+270
+Got output: 
+-1.0000
+===================
+
+===================
+test15: PASSED
+Given input
+135
+Got output: 
+-0.0000
+===================
+
+===================
+test1: PASSED
+Given input
+31.1
+Got output: 
+0.7656
+===================
+
+===================
+test10: PASSED
+Given input
+60.7
+Got output: 
+0.7804
+===================
+
+===================
+test4: PASSED
+Given input
+40.9
+Got output: 
+0.7125
+===================
+
+===================
+test3: PASSED
+Given input
+37.6
+Got output: 
+0.7245
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 16
+TESTS_FAILED: 0
++++++++++++++++++++
+

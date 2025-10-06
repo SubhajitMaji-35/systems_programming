@@ -1,0 +1,86 @@
+===================
+test5: PASSED
+Given input
+10755
+Got output: 
+No
+===================
+
+===================
+test9: PASSED
+Given input
+1
+Got output: 
+No
+===================
+
+===================
+test7: PASSED
+Given input
+9999
+Got output: 
+No
+===================
+
+===================
+test2: PASSED
+Given input
+8128
+Got output: 
+Yes
+===================
+
+===================
+test8: PASSED
+Given input
+13
+Got output: 
+No
+===================
+
+===================
+test6: PASSED
+Given input
+8589869056
+Got output: 
+Yes
+===================
+
+===================
+test1: PASSED
+Given input
+15343
+Got output: 
+No
+===================
+
+===================
+test10: PASSED
+Given input
+6
+Got output: 
+Yes
+===================
+
+===================
+test4: PASSED
+Given input
+933
+Got output: 
+No
+===================
+
+===================
+test3: PASSED
+Given input
+33550336
+Got output: 
+Yes
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

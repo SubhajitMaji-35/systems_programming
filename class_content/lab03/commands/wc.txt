@@ -1,0 +1,42 @@
+ Information:wc 
+# To count the number of words (file or STDIN):
+wc -w <file>
+cat <file> | wc -w
+
+# To count the number of lines (file or STDIN):
+wc -l <file>
+cat <file> | wc -l
+
+# To count the number of bytes (file or STDIN):
+wc -c <file>
+cat <file> | wc -c
+
+# To count files and directories at a given location:
+ls | wc -l
+
+# To if you ever use `wc` in a shell script and need to compare the output with an int you can
+# clean the output (wc returns extra characters around the integer) by using xargs:
+ls -l | wc -l | xargs
+
+ tldr:wc 
+# wc
+# Count lines, words, and bytes.
+# More information: <https://www.gnu.org/software/coreutils/wc>.
+
+# Count all lines in a file:
+wc --lines path/to/file
+
+# Count all words in a file:
+wc --words path/to/file
+
+# Count all bytes in a file:
+wc --bytes path/to/file
+
+# Count all characters in a file (taking multi-byte characters into account):
+wc --chars path/to/file
+
+# Count all lines, words and bytes from `stdin`:
+find . | wc
+
+# Count the length of the longest line in number of characters:
+wc --max-line-length path/to/file

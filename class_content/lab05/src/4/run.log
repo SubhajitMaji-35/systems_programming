@@ -1,0 +1,86 @@
+===================
+test5: PASSED
+Given input
+-1 1 -1
+Got output: 
+Complex
+===================
+
+===================
+test9: PASSED
+Given input
+2 -4 2
+Got output: 
+Real
+===================
+
+===================
+test7: PASSED
+Given input
+1 -7 12
+Got output: 
+Real
+===================
+
+===================
+test2: PASSED
+Given input
+-1 0 1
+Got output: 
+Real
+===================
+
+===================
+test8: PASSED
+Given input
+1 0 0
+Got output: 
+Real
+===================
+
+===================
+test6: PASSED
+Given input
+1 1 1
+Got output: 
+Complex
+===================
+
+===================
+test1: PASSED
+Given input
+2 3 4
+Got output: 
+Complex
+===================
+
+===================
+test10: PASSED
+Given input
+-2 8 -12
+Got output: 
+Complex
+===================
+
+===================
+test4: PASSED
+Given input
+-1 -1 -1
+Got output: 
+Complex
+===================
+
+===================
+test3: PASSED
+Given input
+-1 -1 1
+Got output: 
+Real
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

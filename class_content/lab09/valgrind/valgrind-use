@@ -1,0 +1,8 @@
+valgrind ./4
+
+
+definitely lost: your program is leaking memory and you need to fix it!
+indirectly lost: your program may have crashed and couldn’t clean up memory.
+suppressed: you can safely ignore this area since this memory was not managed by your program
+possibly lost: your program is leaking memory unless you’re doing odd things with pointers.
+

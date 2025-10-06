@@ -1,0 +1,86 @@
+===================
+test5: PASSED
+Given input
+0.01 -1.0
+Got output: 
+Invalid Input
+===================
+
+===================
+test9: PASSED
+Given input
+2.33 5.0
+Got output: 
+11.650 14.660
+===================
+
+===================
+test7: PASSED
+Given input
+5 10
+Got output: 
+50.000 30.000
+===================
+
+===================
+test2: PASSED
+Given input
+-1.001 0.111
+Got output: 
+Invalid Input
+===================
+
+===================
+test8: PASSED
+Given input
+4.5 2
+Got output: 
+9.000 13.000
+===================
+
+===================
+test6: PASSED
+Given input
+1 1
+Got output: 
+1.000 4.000
+===================
+
+===================
+test1: PASSED
+Given input
+1.0 0.01
+Got output: 
+0.010 2.020
+===================
+
+===================
+test10: PASSED
+Given input
+1.4 8.8
+Got output: 
+12.320 20.400
+===================
+
+===================
+test4: PASSED
+Given input
+11.21 0.012
+Got output: 
+0.135 22.444
+===================
+
+===================
+test3: PASSED
+Given input
+-1 2.001
+Got output: 
+Invalid Input
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

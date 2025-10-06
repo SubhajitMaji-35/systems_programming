@@ -1,0 +1,130 @@
+ Information.:curl 
+# curl
+# Transfer data from or to a server using various protocols.
+
+# Download a file from a URL and save it with a specific name
+curl -o filename.ext http://example.com/file.txt
+
+# Download a file from a URL and save it with the original filename
+curl -O http://example.com/file.txt
+
+# Download a file and limit the download speed
+curl --limit-rate 100K http://example.com/file.txt
+
+# Follow redirects if the URL has moved
+curl -L http://example.com
+
+# Send POST data to a server
+curl -d "name=value" http://example.com/resource
+
+# Send JSON data with a POST request
+curl -H "Content-Type: application/json" -d '{"key":"value"}' http://example.com/resource
+
+# Include headers in the output
+curl -i http://example.com
+
+# Display only the HTTP headers for a GET request
+curl -I http://example.com
+
+# Send a request with a custom header
+curl -H "Custom-Header: Value" http://example.com
+
+# Authenticate with a username and password
+curl -u username:password http://example.com
+
+# Use a different request method like PUT or DELETE
+curl -X PUT http://example.com/resource
+
+# Download multiple URLs in sequence
+curl -O http://example.com/file1.txt -O http://example.com/file2.txt
+
+# Resume a failed or interrupted download
+curl -C - -O http://example.com/largefile.zip
+
+# Transfer a file using FTP
+curl -T localfile.txt ftp://ftp.example.com/upload/
+
+# Specify a proxy for the request
+curl -x http://proxy-server:port http://example.com
+
+# Send data with the URL encoded format
+curl --data-urlencode "key=value" http://example.com/resource
+
+# Save the response headers to a file
+curl -D headers.txt http://example.com
+
+# Download a file and run it through a pipe (e.g., to `grep`)
+curl http://example.com/file.txt | grep "search-string"
+
+ Information:curl 
+# To download a file:
+curl <url>
+
+# To download and rename a file:
+curl <url> -o <outfile>
+
+# To download multiple files:
+curl -O <url> -O <url>
+
+# To download all sequentially numbered files (1-24):
+curl http://example.com/pic[1-24].jpg
+
+# To download a file and pass HTTP authentication:
+curl -u <username>:<password> <url>
+
+# To download a file with a proxy:
+curl -x <proxy-host>:<port> <url>
+
+# To download a file over FTP:
+curl -u <username>:<password> -O ftp://example.com/pub/file.zip
+
+# To get an FTP directory listing:
+curl ftp://username:password@example.com
+
+# To resume a previously failed download:
+curl -C - -o <partial-file> <url>
+
+# To fetch only the HTTP headers from a response:
+curl -I <url>
+
+# To fetch your external IP and network info as JSON:
+curl http://ifconfig.me/all.json
+
+# To limit the rate of a download:
+curl --limit-rate 1000B -O <outfile>
+
+# To get your global IP:
+curl httpbin.org/ip 
+
+# To get only the HTTP status code:
+curl -o /dev/null -w '%{http_code}\n' -s -I URL
+
+ tldr:curl 
+# curl
+# Transfers data from or to a server.
+# Supports most protocols, including HTTP, FTP, and POP3.
+# More information: <https://curl.se>.
+
+# Download the contents of a URL to a file:
+curl http://example.com --output path/to/file
+
+# Download a file, saving the output under the filename indicated by the URL:
+curl --remote-name http://example.com/filename
+
+# Download a file, following location redirects, and automatically continuing (resuming) a previous file transfer and return an error on server error:
+curl --fail --remote-name --location --continue-at - http://example.com/filename
+
+# Send form-encoded data (POST request of type `application/x-www-form-urlencoded`). Use `--data @file_name` or `--data @'-'` to read from STDIN:
+curl --data 'name=bob' http://example.com/form
+
+# Send a request with an extra header, using a custom HTTP method:
+curl --header 'X-My-Header: 123' --request PUT http://example.com
+
+# Send data in JSON format, specifying the appropriate content-type header:
+curl --data '{"name":"bob"}' --header 'Content-Type: application/json' http://example.com/users/1234
+
+# Pass a username and password for server authentication:
+curl --user myusername:mypassword http://example.com
+
+# Pass client certificate and key for a resource, skipping certificate validation:
+curl --cert client.pem --key key.pem --insecure https://example.com

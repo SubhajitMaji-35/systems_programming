@@ -1,5 +1,5 @@
 ===================
-test12: FAILED
+test12: PASSED
 Given input
 i 11
 i 22
@@ -12,15 +12,13 @@ p -1
 r -1
 p -1
 q 0
-Expected output: 
+Got output: 
 33 22 11 
 True
 False
 Deleted
 33 22 
 22 33 
-Got output: 
-bash: line 1: 12823 Segmentation fault      (core dumped) /home/112401035/cs2013_112401035/lab09/src/1/1 < test12.in
 ===================
 
 ===================
@@ -41,3 +39,273 @@ Deleted
 ===================
 
 ===================
+test9: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+12 19 21 
+Deleted
+100 12 21 
+Failed
+100 12 21 
+===================
+
+===================
+test7: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+Deleted
+21 12 
+===================
+
+===================
+test14: PASSED
+Given input
+i 50
+i 40
+i 60
+d 45
+s 50
+s 45
+p -1
+q 0
+Got output: 
+Failed
+True
+False
+60 40 50 
+===================
+
+===================
+test2: PASSED
+Given input
+i 12
+i 13
+p -1
+q 0
+Got output: 
+13 12 
+===================
+
+===================
+test8: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+===================
+
+===================
+test13: PASSED
+Given input
+p -1
+s 5
+d 10
+i 100
+d 100
+p -1
+r -1
+q 0
+Got output: 
+-1
+False
+Failed
+Deleted
+-1
+===================
+
+===================
+test11: PASSED
+Given input
+i 7
+p -1
+q 0
+Got output: 
+7 
+===================
+
+===================
+test6: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+===================
+
+===================
+test16: PASSED
+Given input
+i 5
+i 15
+i 25
+p -1
+d 15
+p -1
+d 5
+p -1
+d 25
+p -1
+q 0
+Got output: 
+25 15 5 
+Deleted
+25 5 
+Deleted
+25 
+Deleted
+-1
+===================
+
+===================
+test15: PASSED
+Given input
+i 10
+i 10
+i 20
+p -1
+d 10
+s 10
+p -1
+q 0
+Got output: 
+20 10 10 
+Deleted
+True
+20 10
+===================
+
+===================
+test1: PASSED
+Given input
+i 12
+p -1
+q 0
+Got output: 
+12 
+===================
+
+===================
+test10: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+r -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+===================
+
+===================
+test4: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+===================
+
+===================
+test3: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+p -1
+q 0
+Got output: 
+21 19 14 12 
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 16
+TESTS_FAILED: 0
++++++++++++++++++++
+

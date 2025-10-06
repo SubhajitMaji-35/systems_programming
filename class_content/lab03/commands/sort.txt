@@ -1,0 +1,80 @@
+ Information.:sort 
+# sort
+# Sort lines of text files
+
+# Return the contents of the British English dictionary, in reverse order.
+sort -r /usr/share/dict/british-english
+
+# The GNU sort(1) command can also filter out adjacent duplicate lines and can
+# therefore overlap with the uniq(1) command. However, uniq(1) has some options
+# that sort(1) cannot do so refer to the man page for you situation if you 
+# require something beyond a basic uniqueness check. In addition, there is the
+# potential for parallizing the processing by piping sort(1) into uniq(1) for 
+# non trivial tasks.
+#
+# By default, sort(1) sorts lines or fields using the ASCII table. Here, we're
+# essentially getting alphanumeric sorting, where case is handled separately; -
+# this results in these words being adjacent to one another, thus duplicates
+# are removed.
+#
+# If you need better uniq-ing, you could refer to AWK & its associative arrays.
+printf '%s\n' this is a list of of random words with duplicate words | sort -u
+
+# Sort numerically. If you don't provide the `-n` flag, sort(1) will instead
+# sort by the ASCII table, as mentioned above, meaning it'll display as 1, 10, -
+# 11, 2, 3, 4, etc.
+printf '%d\n' {1..9} 10 11 | sort -n
+
+# You can even sort human-readable sizes. In this example, the 2nd column is
+# being sorted, thanks to the use of the `-k` flag, and the sorting is
+# reversed, so that the top-most storage space hungry filesystems are displayed
+# from df(1).
+df -ht ext4 /dev/sd[a-z][1-9]* | sed '1d' | sort -rhk 2
+
+ Information:sort 
+# To sort a file:
+sort <file>
+
+# To sort a file by keeping only unique:
+sort -u <file>
+
+# To sort a file and reverse the result:
+sort -r <file>
+
+# To sort a file randomly:
+sort -R <file>
+
+# To sort a file and store the output in another file:
+sort <inputFile> -o <outputFile>
+
+# Sort by default uses /var/tmp to store temp files but size of /var/tmp directory is limited. In order to sort huge use a directory with adequate size:
+sort -T <tempDirectory> <file>
+
+ tldr:sort 
+# sort
+# Sort lines of text files.
+# More information: <https://www.gnu.org/software/coreutils/sort>.
+
+# Sort a file in ascending order:
+sort path/to/file
+
+# Sort a file in descending order:
+sort --reverse path/to/file
+
+# Sort a file in case-insensitive way:
+sort --ignore-case path/to/file
+
+# Sort a file using numeric rather than alphabetic order:
+sort --numeric-sort path/to/file
+
+# Sort `/etc/passwd` by the 3rd field of each line numerically, using ":" as a field separator:
+sort --field-separator=: --key=3n /etc/passwd
+
+# Sort a file preserving only unique lines:
+sort --unique path/to/file
+
+# Sort a file, printing the output to the specified output file (can be used to sort a file in-place):
+sort --output=path/to/file path/to/file
+
+# Sort numbers with exponents:
+sort --general-numeric-sort path/to/file

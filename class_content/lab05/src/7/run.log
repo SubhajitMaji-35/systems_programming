@@ -1,0 +1,103 @@
+===================
+test12: PASSED
+Given input
+222 33
+Got output: 
+a>b
+===================
+
+===================
+test5: PASSED
+Given input
+88 9
+Got output: 
+a>b
+===================
+
+===================
+test9: PASSED
+Given input
+5
+6
+Got output: 
+a<b
+===================
+
+===================
+test7: PASSED
+Given input
+0 0
+Got output: 
+a=b
+===================
+
+===================
+test2: PASSED
+Given input
+-1 0
+Got output: 
+a<b
+===================
+
+===================
+test8: PASSED
+Given input
+123abc 456
+Got output: 
+a>b
+===================
+
+===================
+test11: PASSED
+Given input
+111 122
+Got output: 
+a<b
+===================
+
+===================
+test6: PASSED
+Given input
+1 1
+Got output: 
+a=b
+===================
+
+===================
+test1: PASSED
+Given input
+12 34
+Got output: 
+a<b
+===================
+
+===================
+test10: PASSED
+Given input
+-0 0
+Got output: 
+a=b
+===================
+
+===================
+test4: PASSED
+Given input
+-99 99
+Got output: 
+a<b
+===================
+
+===================
+test3: PASSED
+Given input
+99 11
+Got output: 
+a>b
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 12
+TESTS_FAILED: 0
++++++++++++++++++++
+
