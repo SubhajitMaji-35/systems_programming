@@ -1,0 +1,30 @@
+===================
+test2: PASSED
+Given input
+updated packages
+Got output: 
+3
+===================
+
+===================
+test1: PASSED
+Given input
+school will end friday
+Got output: 
+2
+===================
+
+===================
+test3: PASSED
+Given input
+monday rossi1.pdf  
+Got output: 
+2
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 3
+TESTS_FAILED: 0
++++++++++++++++++++
+

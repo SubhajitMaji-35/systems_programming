@@ -1,0 +1,92 @@
+===================
+test2: FAILED
+Given input
+Ganga
+Yamuna
+Brahmaputra
+Indus
+Godavari
+Krishna
+Narmada
+Tapi 
+Mahanadi
+Kaveri
+Expected output: 
+ana
+amna
+ramapura
+nds
+odvari
+rihna
+arada
+ap 
+ahnadi
+avri
+Got output: 
+bash: /home/112401035/cs2013_112401035/labe1/src/5/5: Permission denied
+===================
+
+===================
+test1: FAILED
+Given input
+lion
+tiger
+giraffe
+Orangutan
+Rhinoceros
+Chimpanzee
+Gorilla
+Expected output: 
+io
+igr
+irffe
+raguta
+hiocers
+hipanze
+orlla
+Got output: 
+bash: /home/112401035/cs2013_112401035/labe1/src/5/5: Permission denied
+===================
+
+===================
+test3: FAILED
+Given input
+Kabul
+Yerevan
+Baku
+Tbilisi
+Tashkent
+Astana
+Bishkek
+Dushanbe
+Islamabad
+New Delhi
+Dhaka
+Kathmandu
+Thimphu
+Colombo
+Expected output: 
+abl
+ervan
+ak
+biisi
+askent
+stna
+iskek
+usanbe
+slmaba
+ewDelh
+haa
+atmand
+hiphu
+olmbo
+Got output: 
+bash: /home/112401035/cs2013_112401035/labe1/src/5/5: Permission denied
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 0
+TESTS_FAILED: 3
++++++++++++++++++++
+
