@@ -19,15 +19,30 @@ int head = -1;
 // expected to do
 
 int stack_head(int *data_ptr){
-	if(data_ptr==NULL){
+	if(head == -1){
 		return 1;
 	}else{
+		*data_ptr = stack[head];
 		return 0;
 	}
 }
 
 int push(int data){
+	if(head == SIZE -1){
+		return 1;
+	}else{
+		head++;
+		stack[head]=data;
+		return 0;
+	}
+}
 
-
-
-
+int pop(int* data_ptr){
+	if(head == -1){
+		return 1;
+	}else{
+		*data_ptr=stack[head];
+		head--;
+		return 0;
+	}
+}

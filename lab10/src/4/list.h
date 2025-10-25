@@ -6,7 +6,9 @@
  */
 
 // TODO Add macros to avoid repeated inclusion
+#ifndef LIST_H
 
+#define LIST_H
 
 struct list {
 	  int* array;
@@ -128,3 +130,4 @@ int append(List* s, int data);
 int insert(List* s, int loc, int data);
 
 //TODO Complete closing of #ifndef
+#endif

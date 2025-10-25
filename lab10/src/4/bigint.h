@@ -5,7 +5,9 @@
 
 // TODO:Add macros to prevent duplicate inclusion
 //
+#ifndef BIGINT_H
 // TODO: Add appropriate header files needed
+#define BIGINT_H
 
 struct bigint {
 	List *numbers;

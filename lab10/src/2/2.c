@@ -1,6 +1,7 @@
 
 // TODO: Include the stack header file
 #include <stdio.h>
+#include "stack.h"
 
 int main()
 {
