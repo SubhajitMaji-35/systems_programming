@@ -4,8 +4,6 @@
  */
 
 //TODO: Add appropriate header files as needed
-#include <stdio.h>
-#include <stdlib.h>
 #include "list.h"
 /*
  * Helper function to grow a list. 
@@ -46,11 +44,11 @@ int shrink(List* l){
 	
 	size_t size;
 
-	if(l->curr_count < max_count/2){
+	if(l->curr_count < l->max_count/2){
 		size = l-> max_count * sizeof(int) / 2;
 		int * rearray = realloc(l->array, size);
 		if(rearray == NULL){
-			retrun 1;
+			return 1;
 		}else{
 			l->array= rearray;
 			l->max_count = l-> max_count /2;
@@ -84,7 +82,7 @@ int delete(List* l, int loc)
 	// TODO: Complete the function
 	
 	if(loc < l->curr_count){
-		for(i=loc; i<curr_count+1; i++){
+		for(int i=loc; i<l->curr_count+1; i++){
 			l->array[i]=l->array[i+1];
 		}
 		l->curr_count --;

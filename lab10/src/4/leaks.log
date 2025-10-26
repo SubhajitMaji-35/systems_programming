@@ -1,0 +1,60 @@
+===================
+test5: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test9: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test7: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test2: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test8: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test11: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test6: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test1: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test10: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test4: LEAKS FOUND
+Valgrind output
+===================
+
+===================
+test3: LEAKS FOUND
+Valgrind output
+===================
+
+++++++++++++++++++++++
+TESTS_WITH_NO_LEAK: 0
+TESTS_SHOWING_LEAK: 11
+++++++++++++++++++++++
+

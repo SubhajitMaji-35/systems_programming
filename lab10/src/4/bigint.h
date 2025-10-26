@@ -8,6 +8,9 @@
 #ifndef BIGINT_H
 // TODO: Add appropriate header files needed
 #define BIGINT_H
+#include <stdio.h>
+#include <stdlib.h>
+#include "list.h"
 
 struct bigint {
 	List *numbers;
