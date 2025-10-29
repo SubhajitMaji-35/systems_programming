@@ -1,0 +1,93 @@
+#!/bin/bash
+
+# USAGE: verifier path_to_proj_home path_to_test-suite executable_name
+
+SYNTAX="  Usage: \n    $(basename $0) --proj-dir=DIR_PATH --proj-name=STRING --tests-dir=DIR_PATH\n"
+
+for i in $*
+do
+	case $i in
+	--h*)
+		echo -e $SYNTAX; exit 1;
+		;;
+	-h*)
+		echo -e $SYNTAX; exit 1;
+		;;
+	--help*)
+		echo -e $SYNTAX; exit 1;
+		;;
+	-help*)
+		echo -e $SYNTAX; exit 1;
+		;;
+	--proj-dir=*)
+		eval PROJ_HOME=`echo $i | sed 's/[-a-zA-Z0-9:]*=//'`
+		;;
+	--proj-name=*)
+		NAME=`echo $i | sed 's/[-a-zA-Z0-9:]*=//'`
+		;;
+	--tests-dir=*)
+		eval TESTS_DIR=`echo $i | sed 's/[-a-zA-Z0-9:]*=//'`
+		;;
+	*)
+		# unknown option
+		echo -e $SYNTAX; exit 1;
+		;;
+	esac
+done
+
+
+# Check input file-paths
+[[ -d ${PROJ_HOME} ]] || { echo >&2 "Please check if proj-home (${PROJ_HOME}) folder exists."; exit 1; }
+[[ -d ${TESTS_DIR} ]] || { echo >&2 "Please check if tests-dir (${TESTS_DIR}) folder exists."; exit 1; }
+
+pass=0
+fail=0
+WRK_DIR=${PWD}
+
+cd ${WRK_DIR}
+
+# Run test cases
+cd ${TESTS_DIR}
+TESTS=`find . -type f -name "*.in" | xargs -n1 basename | cut -d'.' -f1`
+for test in ${TESTS}; do
+	echo "===================" >> ${WRK_DIR}/run.log
+	PROG_UT="${PROJ_HOME}/${NAME}"
+	bash -c "$PROG_UT < $test.in" > ${PROJ_HOME}/my_$test.out 2>&1
+	
+	diff -iw $test.out ${PROJ_HOME}/my_$test.out > /dev/null 2>&1
+	
+	if [ $? == 0 ]; then
+		pass=`expr $pass + 1`
+		shopt -s nocasematch
+		echo "$test: PASSED" >> ${WRK_DIR}/run.log
+	        echo "Given input" >> ${WRK_DIR}/run.log
+	        cat $test.in >> ${WRK_DIR}/run.log
+	        echo "Got output: " >> ${WRK_DIR}/run.log
+	        cat $test.out >> ${WRK_DIR}/run.log
+		echo "===================" >> ${WRK_DIR}/run.log
+		echo "" >> ${WRK_DIR}/run.log
+
+	else
+		fail=`expr $fail + 1`
+		shopt -s nocasematch
+		echo >&2 "$test: FAILED" >> ${WRK_DIR}/run.log
+		echo "Given input" >> ${WRK_DIR}/run.log
+		cat $test.in >> ${WRK_DIR}/run.log
+		echo "Expected output: " >> ${WRK_DIR}/run.log
+		cat $test.out >> ${WRK_DIR}/run.log
+		echo "Got output: ">> ${WRK_DIR}/run.log
+		cat ${PROJ_HOME}/my_$test.out >> ${WRK_DIR}/run.log
+		echo "===================" >> ${WRK_DIR}/run.log
+		echo "" >> ${WRK_DIR}/run.log
+	fi
+	rm -f ${PROJ_HOME}/my_$test.out
+done
+
+# Report test results
+echo >> ${WRK_DIR}/run.log
+echo "+++++++++++++++++++" >> ${WRK_DIR}/run.log
+echo "TESTS_PASSED: $pass" >> ${WRK_DIR}/run.log
+echo "TESTS_FAILED: $fail" >> ${WRK_DIR}/run.log
+echo "+++++++++++++++++++" >> ${WRK_DIR}/run.log
+echo "" >> ${WRK_DIR}/run.log
+
