@@ -1,0 +1,62 @@
+===================
+test2: NO LEAKS
+Valgrind output: 
+==13164== Memcheck, a memory error detector
+==13164== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13164== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13164== Command: /home/112401035/cs2013_112401035/labe2/src/1/1
+==13164== 
+b a ==13164== 
+==13164== HEAP SUMMARY:
+==13164==     in use at exit: 0 bytes in 0 blocks
+==13164==   total heap usage: 2 allocs, 2 frees, 16,384 bytes allocated
+==13164== 
+==13164== All heap blocks were freed -- no leaks are possible
+==13164== 
+==13164== For lists of detected and suppressed errors, rerun with: -s
+==13164== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test1: NO LEAKS
+Valgrind output: 
+==13169== Memcheck, a memory error detector
+==13169== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13169== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13169== Command: /home/112401035/cs2013_112401035/labe2/src/1/1
+==13169== 
+today you are how Hello ==13169== 
+==13169== HEAP SUMMARY:
+==13169==     in use at exit: 0 bytes in 0 blocks
+==13169==   total heap usage: 2 allocs, 2 frees, 16,384 bytes allocated
+==13169== 
+==13169== All heap blocks were freed -- no leaks are possible
+==13169== 
+==13169== For lists of detected and suppressed errors, rerun with: -s
+==13169== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test3: NO LEAKS
+Valgrind output: 
+==13174== Memcheck, a memory error detector
+==13174== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13174== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13174== Command: /home/112401035/cs2013_112401035/labe2/src/1/1
+==13174== 
+thisisanunltralongtextwithadditionalcharactersaddedtoensureitmeetstherequirementsofmorecharactershereintotalitcontinuesontogoanditdoesnotstopanytimesoonthispartoftextisaddedtoenhancetheoveralllengthandfulfillthecharacterrequestwhilemaintainingtheconsistencyandstyleofthesentencecreatingasmoothflowwithoutrandominterruptions day good a have ==13174== 
+==13174== HEAP SUMMARY:
+==13174==     in use at exit: 0 bytes in 0 blocks
+==13174==   total heap usage: 2 allocs, 2 frees, 16,384 bytes allocated
+==13174== 
+==13174== All heap blocks were freed -- no leaks are possible
+==13174== 
+==13174== For lists of detected and suppressed errors, rerun with: -s
+==13174== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+++++++++++++++++++++++
+TESTS_WITH_NO_LEAK: 3
+TESTS_SHOWING_LEAK: 0
+++++++++++++++++++++++
+

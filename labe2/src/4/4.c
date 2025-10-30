@@ -2,6 +2,7 @@
 // TODO: Include header files as necessary
 #include <stdio.h>
 #include <stdlib.h>
+#include "ivector.h"
 
 
 int main()
@@ -56,11 +57,24 @@ int main()
                       }
 
                       // TODO: Prevent memory leaks
+			
+		      free(v1->vec);
+		      free(v1);
+
+		      free(v2->vec);
+		      free(v2);
+			
+		      if(v3){
+			      if(v3->vec){
+		      			free(v3->vec);
+			      }
+		      		free(v3);
+		      }
 
                       break;
 
                     case 'm':
-                      unsigned int s;
+
                       // Read the dimension and vector contents
                       v1 = malloc(sizeof(Ivector));
                       v1->size = dim;
@@ -68,17 +82,28 @@ int main()
                       for(unsigned int i = 0; i < v1->size; i++){
                         scanf("%u", &v1->vec[i]);
                       }
-
+			
+		      unsigned int c;
                       // Read the scalar
-                      scanf("%u", &s);
+                      scanf("%u", &c);
 
-                      v2 = scalarmult(v1, s);
+                      v2 = scalarmult(v1, c);
                       if(v2){
                         print(v2);
                         printf("\n");
                       }
 
                       // TODO: Prevent memory leaks
+		      	
+		      free(v1->vec);
+		      free(v1);
+
+		      if(v2){
+			      if(v2->vec){
+				      free(v2->vec);
+			      }
+		      		free(v2);
+		      }
                       
                       break;
 
@@ -111,6 +136,12 @@ int main()
                       }
 
                       // TODO: Prevent memory leaks
+		      
+		      free(v1->vec);
+		      free(v1);
+
+		      free(v2->vec);
+		      free(v2);
                      
                       break;
 

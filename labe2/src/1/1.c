@@ -7,45 +7,40 @@
 int main()
 {
 
-	//TODO: Com	plete the code
+	//TODO: Complete the code
 	
-	int c;
-	char string[1000];
+	char string[100000];
 	int i=0;
+	char c;
 	c=getchar();
-	while(c!=EOF){
+	while(c!='\n'){
 		string[i] = c;
 		i++;
+		c=getchar();
 	}
-	
-	printf("%s", string);
 
-	char* ptr= string;
+	i--;
 
-	while(*ptr!='\0'){
-		ptr++;
-	}
-	ptr--;
-
-	char* ptr1;
-	char*ptr2;
-
-	ptr1=ptr;
-
-	while(*ptr!=*string){
-		if(*ptr==(char)' '){
-			ptr2=ptr;
-			while(ptr1!=ptr2){
-				printf("%c", *ptr1);
-				ptr1--;
+	while(i>=0){
+		for(int j = i; j>=0; j--){
+			if(string[j] == ' '){
+				for(int k=j+1; k<=i; k++){
+					printf("%c",string[k]);
+				}
+				i=j-1;
+				printf(" ");
+				break;
 			}
-			printf("%c", *ptr1);
-			ptr1--;
+			else if(j==0){
+				for(int k =j; k<=i; k++){
+					printf("%c", string[k]);
+				}
+				i=-1;
+				printf(" ");
+				break;
+			}
 		}
-		ptr--;
-	}		
-
-
+	}
 	//Do not add/modify anything below this line
 
         return 0;

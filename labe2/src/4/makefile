@@ -18,6 +18,15 @@ all: build
 # TODO: Edit only in the following parts
 # You need to write rules for ivector.o, 4.o and build
 
+ivector.o: ivector.h ivector.c
+	gcc -Wall -Werror -c ivector.c -o ivector.o
+
+4.o: 4.c
+	gcc -Wall -Werror -c 4.c -o 4.o
+
+build: 4.o ivector.o
+	gcc 4.o ivector.o -o 4
+
 #####################
 # Do not edit below #
 #####################

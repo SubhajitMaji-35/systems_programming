@@ -1,0 +1,67 @@
+===================
+test2: NO LEAKS
+Valgrind output: 
+==13500== Memcheck, a memory error detector
+==13500== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13500== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13500== Command: /home/112401035/cs2013_112401035/labe2/src/4/4
+==13500== 
+22 24 26 28 
+==13500== 
+==13500== HEAP SUMMARY:
+==13500==     in use at exit: 0 bytes in 0 blocks
+==13500==   total heap usage: 6 allocs, 6 frees, 16,448 bytes allocated
+==13500== 
+==13500== All heap blocks were freed -- no leaks are possible
+==13500== 
+==13500== For lists of detected and suppressed errors, rerun with: -s
+==13500== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test1: NO LEAKS
+Valgrind output: 
+==13505== Memcheck, a memory error detector
+==13505== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13505== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13505== Command: /home/112401035/cs2013_112401035/labe2/src/4/4
+==13505== 
+92 94 96 
+==13505== 
+==13505== HEAP SUMMARY:
+==13505==     in use at exit: 0 bytes in 0 blocks
+==13505==   total heap usage: 8 allocs, 8 frees, 16,468 bytes allocated
+==13505== 
+==13505== All heap blocks were freed -- no leaks are possible
+==13505== 
+==13505== For lists of detected and suppressed errors, rerun with: -s
+==13505== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test3: NO LEAKS
+Valgrind output: 
+==13511== Memcheck, a memory error detector
+==13511== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==13511== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13511== Command: /home/112401035/cs2013_112401035/labe2/src/4/4
+==13511== 
+200
+Invalid operation. Dimension mismatch
+1000 500 
+==13511== 
+==13511== HEAP SUMMARY:
+==13511==     in use at exit: 0 bytes in 0 blocks
+==13511==   total heap usage: 14 allocs, 14 frees, 16,540 bytes allocated
+==13511== 
+==13511== All heap blocks were freed -- no leaks are possible
+==13511== 
+==13511== For lists of detected and suppressed errors, rerun with: -s
+==13511== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+++++++++++++++++++++++
+TESTS_WITH_NO_LEAK: 3
+TESTS_SHOWING_LEAK: 0
+++++++++++++++++++++++
+

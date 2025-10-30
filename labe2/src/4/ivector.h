@@ -6,6 +6,7 @@
 // TODO: Add appropriate headers and macro statements
 
 #ifndef IVECTOR_H
+#define IVECTOR_H
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -66,3 +67,4 @@ Ivector* scalarmult(Ivector* v, unsigned int c);
 void print(Ivector* v);
 
 // TODO: Add appropriate macro code
+#endif
